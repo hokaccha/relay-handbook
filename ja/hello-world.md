@@ -20,8 +20,8 @@ ESLintのルールは[.eslintrc](../.eslintrc)で定義されています。
 また、インラインコードをCodeBlockに書いたJavaScriptもESLintによりチェックされます。
 
 ```js
-function helloWorld(name){
-    return `Hello World ${name}!`;
+function helloWorld(name) {
+  return `Hello World ${name}!`;
 }
 ```
 
