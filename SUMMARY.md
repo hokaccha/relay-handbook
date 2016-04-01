@@ -1,2 +1,2 @@
-- [はじめに](ja/introduction.md)
-- [Hello World](ja/hello-world.md)
+- [Relayとは](ja/what_is_relay.md)
+- [Relayを始める](ja/getting_started.md)
