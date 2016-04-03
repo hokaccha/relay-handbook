@@ -14,7 +14,7 @@
     "eslint": "eslint --max-warnings 0 --ignore-path .gitignore .",
     "eslint:md": "eslint -c .md.eslintrc --ext .md ja/**/*.md",
     "textlint": "textlint ja",
-    "test:js": "mocha",
+    "test:js": "mocha test/**/*.js",
     "test": "npm-run-all --parallel test:js textlint eslint:md eslint build"
   },
   "devDependencies": {
@@ -37,5 +37,15 @@
     "textlint-rule-no-start-duplicated-conjunction": "^1.0.3",
     "textlint-rule-prh": "^2.2.0",
     "textlint-rule-spellcheck-tech-word": "^4.0.1"
+  },
+  "dependencies": {
+    "babel-relay-plugin": "^0.7.3",
+    "express": "^4.13.4",
+    "express-graphql": "^0.4.13",
+    "graphql": "^0.4.18",
+    "graphql-relay": "^0.3.6",
+    "react": "^0.14.8",
+    "react-dom": "^0.14.8",
+    "react-relay": "^0.7.3"
   }
 }
