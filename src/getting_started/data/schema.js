@@ -7,13 +7,22 @@ import {
 import {
 } from 'graphql-relay';
 
+let appType = new GraphQLObjectType({
+  name: 'App',
+  fields: {
+    text: {
+      type: GraphQLString,
+    },
+  },
+});
+
 let schema = new GraphQLSchema({
   query: new GraphQLObjectType({
     name: 'Query',
     fields: {
-      text: {
-        type: GraphQLString,
-        resolve: () => 'Hello relay!',
+      app: {
+        type: appType,
+        resolve: () => ({ text: 'Hello Relay!' }),
       },
     },
   }),

@@ -1,0 +1,7 @@
+type App {
+  text: String
+}
+
+type Query {
+  app: App
+}

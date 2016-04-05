@@ -4,8 +4,8 @@ import { graphql } from 'graphql';
 
 describe('schema', () => {
   it('should return text', () => {
-    graphql(schema, '{ text }').then(result => {
-      assert(result.data.text === 'Hello Relay!');
+    return graphql(schema, '{ app { text } }').then(result => {
+      assert(result.data.app.text === 'Hello Relay!');
     });
   });
 });

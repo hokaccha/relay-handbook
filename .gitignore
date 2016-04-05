@@ -87,3 +87,5 @@ _book
 *.epub
 *.mobi
 *.pdf
+
+bundle.js
