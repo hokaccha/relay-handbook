@@ -1,5 +1,5 @@
 import assert from 'power-assert';
-import schema from '../../src/getting_started/data/schema';
+import schema from '../data/schema';
 import { graphql } from 'graphql';
 
 describe('schema', () => {
