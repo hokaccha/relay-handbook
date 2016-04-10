@@ -4,15 +4,10 @@ import {
   GraphQLSchema,
 } from 'graphql';
 
-import {
-} from 'graphql-relay';
-
 let appType = new GraphQLObjectType({
   name: 'App',
   fields: {
-    text: {
-      type: GraphQLString,
-    },
+    text: { type: GraphQLString },
   },
 });
 

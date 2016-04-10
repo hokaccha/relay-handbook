@@ -1,4 +1,11 @@
 {
-  "presets": ["es2015", "react"],
-  "plugins": ["./babel_relay_plugin"]
+  "env": {
+    "node": {
+      "presets": ["es2015-node5"]
+    },
+    "browser": {
+      "presets": ["es2015", "react"],
+      "plugins": ["transform-class-properties", "./build/babel_relay_plugin"]
+    }
+  }
 }
