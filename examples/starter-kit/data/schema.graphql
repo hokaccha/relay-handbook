@@ -1,0 +1,11 @@
+schema {
+  query: Query
+}
+
+type App {
+  text: String
+}
+
+type Query {
+  app: App
+}
