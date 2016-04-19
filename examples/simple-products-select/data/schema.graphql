@@ -1,0 +1,18 @@
+schema {
+  query: Query
+}
+
+type App {
+  product(id: Int): Product
+}
+
+type Product {
+  id: ID
+  name: String
+  price: Int
+  description: String
+}
+
+type Query {
+  app: App
+}
